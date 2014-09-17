@@ -215,6 +215,14 @@ else
      exit 1
 fi
 
+if [[ "$hashcommand" == "*sha256" ]]; then
+    hashtype="SHA256"
+elif [[ "$hashcommand" == "*md5*" ]]; then
+    hashtype="MD5"
+elif [[ -z "$hashcommand" ]]; then
+    echo "Invalid hash type set."
+    exit 1
+fi
 cmdline "$@"
 
 if [[ -n $PASSWORD ]]; then
