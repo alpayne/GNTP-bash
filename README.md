@@ -36,10 +36,10 @@ EXAMPLES:
 
 Register an application on the localhost:
 
-    $PROGNAME -r -a "App Name" -n "startup" -i "http://.../startupicon.png" -n "shutdown"
+    gntp.sh -r -a "App Name" -n "startup" -i "http://.../startupicon.png" -n "shutdown"
 
 Send a notification to the localhost:
 
-    $PROGNAME -a "App Name" -n "startup" -T "App Name Starting" -t "Application started"
+    gntp.sh -a "App Name" -n "startup" -T "App Name Starting" -t "Application started"
 
 ```
