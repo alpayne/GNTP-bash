@@ -7,11 +7,11 @@ Bash script for sending messages over GNTP to Growl
 usage: gntp.sh [-H <host[:port]>] [-P <password>] [-rs] -a <APPNAME name> 
                -n <notification name> [-n <notification name]...
 
-Program send messages via GNTP to Growl APPNAME listening on target host.
+Program send messages via GNTP to Growl application listening on target host.
 
 OPTIONS:
 
-    -a --appname            Name of APPNAME in as it appears in Growl
+    -a --appname            Name of application in as it appears in Growl
     -d --displayname        Display name for notification in Growl
     -H --host               Host[:port] tp send message to (defaults to local host
                             and port 23053)
